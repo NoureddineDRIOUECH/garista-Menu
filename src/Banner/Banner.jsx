@@ -3,7 +3,7 @@ import { FaFacebook, FaInstagram, FaSnapchat, FaTiktok,FaYoutube, } from "react-
 import { Link } from "react-router-dom";
 import { APIURL } from '../lib/ApiKey';
 
-function Banner({ items, infoRes }) {
+function Banner({ items, infoRes, customization }) {
     const blue = "#28509E";
 
     console.log("The Items => ", items);
@@ -22,27 +22,27 @@ function Banner({ items, infoRes }) {
                     <div className='flex gap-2'>
                         {infoRes.facebook && (
                             <Link to={infoRes.facebook} target='_blank'>
-                                <FaFacebook color='white' />
+                                <FaFacebook color={customization?.selectedIconColor} />
                             </Link>
                         )}
                         {infoRes.instgram && (
                             <Link to={infoRes.instgram} target='_blank'>
-                                <FaInstagram color='white' />
+                                <FaInstagram color={customization?.selectedIconColor} />
                             </Link>
                         )}
                         {infoRes.snapshat && (
                             <Link to={infoRes.snapshat} target='_blank'>
-                                <FaSnapchat color='white' />
+                                <FaSnapchat color={customization?.selectedIconColor} />
                             </Link>
                         )}
                         {infoRes.youtube && (
                             <Link to={infoRes.youtube} target='_blank'>
-                                <FaYoutube color='white' />
+                                <FaYoutube color={customization?.selectedIconColor} />
                             </Link>
                         )}
                         {infoRes.tiktok && (
                             <Link to={infoRes.tiktok} target='_blank'>
-                                <FaTiktok color='white' />
+                                <FaTiktok color={customization?.selectedIconColor} />
                             </Link>
                         )}
                     </div>
@@ -53,3 +53,4 @@ function Banner({ items, infoRes }) {
 }
 
 export default Banner;
+

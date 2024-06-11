@@ -134,7 +134,7 @@ export default function Claims({
       <div className="w-full max-w-md p-6  rounded-lg h-full">
         <div className="space-y-4">
           <div className="flex items-center justify-between">
-          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Make A <span className="underline underline-offset-3 decoration-8 decoration-[#28509E] dark:decoration-blue-600">Claims</span></h1>
+          <h1 className="mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Make A <span className="underline underline-offset-3 decoration-8 decoration-[#28509E] dark:decoration-blue-600">Claim</span></h1>
             <div className="flex items-center space-x-2">
               <button className="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-800">
                 <SmileIcon className="w-5 h-5 text-gray-500 dark:text-gray-400" />
